@@ -42,13 +42,8 @@ public class Test {
 	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		Scanner in = new Scanner(System.in);
-             int n = in.nextInt();
-             int[] prices = new int[5];
-             for(int i =0;i<5;i++){
-            	 prices[i] = in.nextInt();
-             }
-             System.out.println(calculateMax(prices));
+		Date today = new Date(System.currentTimeMillis());
+		System.out.println(today.getYear()+"-"+today.getMonth()+"-"+today.getDay());
 	}
 
 }
