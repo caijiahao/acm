@@ -54,6 +54,7 @@ public class Main {
           vis[1] = 1;
           int tmp_i = 1;
           for (int i = 0; i < n - 1; i++) {
+        	  System.out.println(tmp_i);
               for (int j = 1; j <= n; j++) {
                   if (vis[j] == 0 && road[tmp_i][j] == 1) {
                       dij[j] = Math.min(dij[j], dij[tmp_i] + station[j]);
@@ -70,7 +71,8 @@ public class Main {
 
               vis[tmp_i] = 1;
           }
-          System.out.println(dij[n]);
+         /* for(int i=0;i<=n;i++)
+          System.out.println(dij[i]);*/
       }
       scanner.close();
   }
