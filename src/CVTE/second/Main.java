@@ -6,7 +6,7 @@ import java.util.Stack;
 public class Main {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+
         Scanner in =new Scanner(System.in);
         while(in.hasNext()){
         	char[] letter = in.nextLine().toCharArray();
